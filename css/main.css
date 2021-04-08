@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/*
+
+- Mobile: 375px
+- Desktop: 1440px
+
+*/
+
+:root{
+    --darkcyan: hsl(185, 75%, 39%);
+    --erydarkblue: hsl(229, 23%, 23%);
+    --darkgrayishblue: hsl(227, 10%, 46%);
+    --darkgray: hsl(0, 0%, 59%);
+}
+
+*, ::after, ::before{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: var(--darkcyan);
+    background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+}
+
+.card__body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 2.5rem rgb(0, 0, 0, 0.2);
+}
+
+.img__bg{
+    border-radius: 1rem 1rem 0px 0px;
+}
+
+.icon__profile{
+    border-radius: 50%;
+    border: 0.3rem white solid;
+    background-color: white;
+    position: absolute;
+    top: 90px;
+}
+
+.card__tittle{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 4rem;
+}
+
+.card__tittle .name{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.card__tittle strong{
+    font-weight: 400;
+    color: var(--darkgray);
+    margin: 0px 0.3rem;
+}
+
+.card__tittle .country{
+    color: var(--darkgray);
+    margin: 0.8rem 0px;
+    font-size: 0.8rem;
+}
+
+.card__social{
+    width: 100%;
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: rgba(63, 63, 63, 0.199) 0.1rem solid;
+}
+
+.item{
+    font-weight: 700;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    line-height: 1.5rem;
+}
+
+.item__text{
+    font-weight: 400;
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+    color: var(--darkgray);
+}
+
+.attribution{
+    position: absolute;
+    padding: 2rem;
+    bottom: 0;
+}
